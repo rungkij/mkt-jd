@@ -55,17 +55,23 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
             ))}
             {tasks?.daily_pattern && (
                 <div className="grid grid-cols-3 gap-2 text-center">
-                    <div className="bg-white/5 p-2 rounded">
-                        <div className={`text-xl font-bold font-tech ${colors.primary}`}>3</div>
-                        <div className="text-[10px] opacity-70">Images</div>
+                    <div className="bg-white/5 p-2 rounded flex flex-col items-center justify-center min-h-[60px]">
+                        <div className={`text-sm font-bold ${colors.primary} leading-tight`}>
+                            {tasks.daily_pattern.images}
+                        </div>
+                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">Stills</div>
                     </div>
-                    <div className="bg-white/5 p-2 rounded">
-                        <div className={`text-xl font-bold font-tech ${colors.primary}`}>2</div>
-                        <div className="text-[10px] opacity-70">Videos</div>
+                    <div className="bg-white/5 p-2 rounded flex flex-col items-center justify-center min-h-[60px]">
+                        <div className={`text-sm font-bold ${colors.primary} leading-tight`}>
+                            {tasks.daily_pattern.short_videos}
+                        </div>
+                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">Shorts</div>
                     </div>
-                    <div className="bg-white/5 p-2 rounded">
-                        <div className={`text-xl font-bold font-tech ${colors.primary}`}>1</div>
-                        <div className="text-[10px] opacity-70">Ads</div>
+                    <div className="bg-white/5 p-2 rounded flex flex-col items-center justify-center min-h-[60px]">
+                        <div className={`text-sm font-bold ${colors.primary} leading-tight`}>
+                            {tasks.daily_pattern.ads}
+                        </div>
+                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">Ads</div>
                     </div>
                 </div>
             )}
@@ -125,7 +131,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
       {tasks?.input_source && (
           <div className={`mt-auto pt-2 flex items-center gap-2 text-xs ${colors.secondary} opacity-70`}>
               <ArrowRight size={12} />
-              <span>Input Source: {tasks.input_source}</span>
+              <span>Input: {tasks.input_source}</span>
           </div>
       )}
     </div>

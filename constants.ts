@@ -47,59 +47,59 @@ export const TEAM_DATA: TeamMember[] = [
   {
     id: 'leader-01',
     name: "พี่เอิธ (P'Earth)",
-    role: "Marketing & Sales Lead",
+    role: "Marketing & Sales Lead (The Commander)",
     roleType: 'LEADER',
-    coreFunction: "กำหนดทิศทาง, ฟันธงตัดสินใจ, เชื่อมประสานทีม",
+    coreFunction: "กำหนดทิศทางยุทธศาสตร์การตลาดและการขาย, ตัดสินใจขั้นสุดท้าย (Go/No-Go), เป็นจุดเชื่อมประสานระหว่างทีมการตลาด ทีมขาย และผู้บริหารระดับสูง",
     protocols: {
-      urgent: "LINE / โทรศัพท์",
-      routine: "Google Drive / Sheets",
-      rule: "ถ้าไม่แน่ใจ ให้ถามก่อนลงมือทำ"
+      urgent: "Direct Line / Call (สายด่วน)",
+      routine: "Google Workspace / Weekly Meeting",
+      rule: "Trust your gut, but verify with data. (ถ้าไม่แน่ใจ ให้ถาม)"
     }
   },
   {
     id: 'op-01',
     name: "แตงกวา (Tangkwa)",
-    role: "IT + AI + Ads Monitor",
+    role: "IT + AI + Ads Specialist (The Architect)",
     roleType: 'IT_AI',
-    mainDuty: "ดูหลังบ้าน + แปลข้อมูลดิบให้ทีมนำไปใช้ต่อได้",
+    mainDuty: "ดูแลระบบหลังบ้านทั้งหมด (Ads Optimization) และแปรรูป Data ให้เป็น Insight ที่ทีมนำไปใช้ต่อได้จริง",
     tasks: {
-      daily: ["เช็กหลังบ้านแอด Meta/Google", "ตรวจสอบค่า CPL ผิดปกติ", "รับแจ้งปัญหา IT/ระบบ"],
+      daily: ["Monitor Ads Performance (Meta/Google)", "ตรวจสอบความผิดปกติของค่า CPL/CTR", "Support ปัญหา IT และ Hardware ของทีม"],
       weekly: {
-        name: "Competitor Intelligence",
-        tool: "Perplexity AI",
-        outputs: ["โปรโมชั่นคู่แข่ง", "Tone of Voice", "สไตล์ภาพ/วิดีโอ"]
+        name: "Competitor Intelligence Scouting",
+        tool: "Perplexity AI + Social Listening",
+        outputs: ["วิเคราะห์โปรโมชั่นคู่แข่ง", "จับตา Tone of Voice ใหม่ๆ", "ถอดรหัส Key Visual คู่แข่ง"]
       },
-      special: "ทดลองเครื่องมือ AI ใหม่ๆ และช่วยคิด Workflow"
+      special: "R&D เครื่องมือ AI ใหม่ๆ (Gen AI) เพื่อลดเวลาทำงานและสร้าง Workflow อัตโนมัติ"
     }
   },
   {
     id: 'op-02',
     name: "บอย (Boy)",
-    role: "Graphic + Creative Production",
+    role: "Senior Graphic & Creative (The Creator)",
     roleType: 'GRAPHIC',
-    mainDuty: "ผลิตงานให้ขายง่าย และดูเป็นมืออาชีพ",
-    workflowRule: "สูตร 3-2-1",
+    mainDuty: "ผลิต Visual Content ทั้งภาพและวิดีโอ เพื่อตอบโจทย์ Performance Marketing และ Branding (เน้นขายได้และภาพลักษณ์ดี)",
+    workflowRule: "Creative Pattern Protocol",
     tasks: {
       daily_pattern: {
-        images: "3 ชิ้น (ขาย/เล่าเรื่อง/บรรยากาศ)",
-        short_videos: "2 ชิ้น (Reels/Shorts)",
-        ads: "1 ชิ้น (ปรับตาม Data)"
+        images: "Stills (Key Visual / Perspective / Mood & Tone)",
+        short_videos: "Short Video (Reels / TikTok / Walkthrough)",
+        ads: "Conversion Ads (Promotion / Hard Sell / Info)"
       },
-      input_source: "รับ Guideline มาจากแตงกวา"
+      input_source: "รับ Brief Strategy จากแตงกวา และ Direction จากพี่เอิธ"
     }
   },
   {
     id: 'op-03',
     name: "สุ (Su)",
-    role: "Organic + Reviewer",
+    role: "Content Creator & Organic Lead (The Soul)",
     roleType: 'ORGANIC',
-    mainDuty: "ทำให้เพจมีชีวิตชีวา และโครงการดูน่าเข้าอยู่",
+    mainDuty: "สร้างสรรค์ Content ให้เพจมีชีวิตชีวา (Engagement) และนำเสนอภาพลักษณ์โครงการให้น่าอยู่ (Desire)",
     tasks: {
-      daily: ["ดูแลโพสต์ Organic", "เขียนแคปชั่น", "ตอบ Inbox/Comment", "เก็บ Feedback ลูกค้า"],
+      daily: ["Curate Organic Content Flow", "Craft Engaging Captions (Hook/Story)", "Active Response (Inbox/Comment SLA < 1hr)", "สรุป Voice of Customer"],
       special: {
-        name: "รีวิวโครงการ (Video Review)",
-        style: "เดินถ่ายจริง, Authentic, Non-Hard Sell",
-        collaboration: "ส่งไฟล์ Footage ให้บอยตัดต่อ"
+        name: "Project Walkthrough Reviews",
+        style: "Real User Experience (POV), เน้นความจริงใจ ไม่ขายตรงเกินไป",
+        collaboration: "ถ่ายทำ Footage คุณภาพสูง ส่งต่อให้ Boy ตัดต่อ"
       }
     }
   }
