@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import SciFiCard from './components/SciFiCard';
 import DetailSection from './components/DetailSection';
@@ -122,6 +123,7 @@ const App: React.FC = () => {
             <span>///</span>
         </motion.div>
       </footer>
+      <Analytics />
     </div>
   );
 };
